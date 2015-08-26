@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=1170">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,cyrillic-ext">
+    <link rel="stylesheet" href="css/main.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body id="main">
+    <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-2">
+              <div class="logo"><img src="img/logo.png" alt="" class="img-responsive"></div>
+            </div>
+            <div class="col-xs-7">
+              <ul>
+                <li><a href="#what">Что вы получите?</a></li>
+                <li><a href="#tools">Инструменты</a></li>
+                <li><a href="#team">Наша команда</a></li>
+                <li><a href="#test">Тестовый период</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-3">
+              <div class="block">
+                <div class="phone"><a href="tel:">+7 (495) 000 00 00</a></div>
+                <div class="callback"><img src="img/phone.png" alt=""><a href="#callback">Заказать звонок</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <section class="bg1">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>Решаем задачи улучшения качества обслуживания клиентов за месяц, по технологии CRM Expert</h1>
+              <p class="under">14 лет опыта внедрения в такие компании как: <br>Сбербанк, МГТС, Land Rover, Мегафон, HP, Газпром, НТВ и другие.</p>
+              <button class="buy">Заказать услугу на месяц бесплатно</button>
+              <div class="down"><img src="img/down.png" alt="" class="img-responsive"></div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="bg2" class="bg2">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>По каким причинам вы теряете клиентов?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="block">
+                <div class="bord"><img src="img/why_06.png" alt="" class="img-responsive pull-left"></div>
+                <div class="text">
+                  <h4>65% клиентов </h4>
+                  <p class="min">отказываются от услуг компании после прочтения негативных отзывов.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="block">
+                <div class="bord"><img src="img/why_03.png" alt="" class="img-responsive pull-left"></div>
+                <div class="text">
+                  <h4>15% недовольных </h4>
+                  <p class="min">клиентов жалуются, остальные 85% молча уходят к конкурентам</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="block">
+                <div class="bord"><img src="img/why_14.png" alt="" class="img-responsive pull-left"></div>
+                <div class="text">
+                  <h4>90% недовольных </h4>
+                  <p class="min">клиентов больше не возвращаются</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="block">
+                <div class="bord"><img src="img/why_11.png" alt="" class="img-responsive pull-left"></div>
+                <div class="text">
+                  <h4>До 40% клиентов  </h4>
+                  <p class="min">теряются из-за непрофессиональных и нелояльных сотрудников</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form">
+                <p class="zag">Получите подробную консультацию<br>от специалиста с опытом работы <span>более 10 лет</span></p>
+                <form id="frm2" method="post" action="php/submit.php" class="contactform1">
+                  <input type="text" name="name" placeholder="Ваш имя:" class="form-control frstclass validate[required]">
+                  <input type="text" name="phone" placeholder="Ваш телефон:" class="form-control phone  validate[required]">
+                  <input type="text" name="email" placeholder="Ваш email:" class="form-control email  validate[required]">
+                  <input name="utm_medium" value="&lt;? echo $utm_medium;?&gt;" type="hidden" class="utm_medium">
+                  <input name="utm_source" value="&lt;? echo $utm_source;?&gt;" type="hidden" class="utm_source">
+                  <input name="utm_campaign" value="&lt;? echo $utm_campaign;?&gt;" type="hidden" class="utm_campaign">
+                  <input name="utm_term" value="&lt;? echo $utm_term;?&gt;" type="hidden" class="utm_term">
+                  <input name="utm_content" value="&lt;? echo $utm_content;?&gt;" type="hidden" class="utm_content">
+                  <input name="block" value="&lt;? echo $block;?&gt;" type="hidden" class="block">
+                  <input name="keyword" value="&lt;? echo $keyword;?&gt;" type="hidden" class="keyword">
+                  <input name="position" value="&lt;? echo $position;?&gt;" type="hidden" class="position">
+                  <input name="action" value="" type="hidden">
+                  <button>Протестировать услугу</button>
+                </form>
+                <p class="conf">100% конфедициальность. Все ваши данные будут засекречены.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="what" class="bg3">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>Что Вы получите, работая с нами?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row"> 
+            <div class="col-xs-12"><img src="img/whitearr1.png" alt="" class="img-responsive whitearr1"><img src="img/whitearr2.png" alt="" class="img-responsive whitearr2">
+              <p data-wow-offset="100" class="profitup wow pulse">Увеличение прибыли от 10%</p>
+              <div class="bl1"><img src="img/d_03.png" alt="" class="img-responsive pull-left">
+                <p class="txt">Сохранение и преумножение числа постоянных покупателей</p>
+              </div>
+              <div class="bl2"><img src="img/d_06.png" alt="" class="img-responsive pull-left">
+                <p class="txt">Помогаем добиться результата за счет улучшения следующих показателей:</p>
+              </div>
+              <div class="bigblock">
+                <div class="row">
+                  <div class="col-xs-4">
+                    <div data-wow-delay="0s" class="minbord wow fadeIn">1</div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div data-wow-delay=".6s" class="minbord wow fadeIn">2</div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div data-wow-delay="1.2s" class="minbord wow fadeIn">3</div>
+                  </div>
+                </div>
+              </div>
+              <div data-wow-offset="100" class="complete wow pulse">дополнительный <br><span>ДОХОД</span></div>
+            </div>
+          </div>
+        </div>
+      <div class="abs">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="blog"><img src="img/ics_03.png" alt="" class="im1">
+                  <div class="newtxt tm1">Информируемость потребителей</div>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="blog"><img src="img/ics_05.png" alt="" class="im2">
+                  <div class="newtxt">Удовлетворенность и лояльность клиентов</div>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="blog"><img src="img/ics_07.png" alt="" class="im3">
+                  <div class="newtxt tm3">Эффективность работы персонала</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section id="tools" class="bg4">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>Инструменты управления качеством обслуживания и повышения лояльности клиентов</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="block active_block"><img src="img/bigim_03.jpg" alt="" class="img-responsive topimg">
+                <div class="blockunder">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <div class="count">1</div><img src="img/bg4_i_03.png" alt=""><img src="img/bg4_i_14.png" alt=""><img src="img/bg4_i_10.png" alt="">
+                    </div>
+                    <div class="col-xs-9">
+                      <div class="zag">Консалтинг и обучение</div>
+                      <div class="greytext">Получите пошаговую схему достижения клиентского счастья</div>
+                      <p class="ic">Исследования удовлетворенности покупателей</p>
+                      <p class="ic">Внедрение Программ лояльности «под ключ»</p>
+                      <p class="ic">Школа клиентского сервиса</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <p class="text-center more">Подробнее</p>
+                    </div>
+                    <div class="col-xs-6">
+                      <p class="text-center testim">Отзыв / Опыт</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="block"><img src="img/bigim_05.jpg" alt="" class="img-responsive topimg">
+                <div class="blockunder">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <div class="count">2</div><img src="img/bg4_i_03.png" alt=""><img src="img/bg4_i_14.png" alt=""><img src="img/bg4_i_10.png" alt="">
+                    </div>
+                    <div class="col-xs-9">
+                      <div class="zag">Интерактивные планшеты</div>
+                      <div class="greytext">Оценивайте удовлетворенность, повышайте конверсию в точках продаж</div>
+                      <p class="ic">Самые легкие технологии для контакта с Вашими клиентами</p>
+                      <p class="ic">Трансляция рекламного контента</p>
+                      <p class="ic down2">Контроль качества работы персонала</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <p class="text-center more">Подробнее</p>
+                    </div>
+                    <div class="col-xs-6">
+                      <p class="text-center testim">Отзыв / Опыт</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="block"><img src="img/bigim_07.jpg" alt="" class="img-responsive topimg">
+                <div class="blockunder">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <div class="count">3</div><img src="img/bg4_i_05.png" alt="" class="down1"><img src="img/bg4_i_09.png" alt=""><img src="img/bg4_i_16.png" alt="">
+                    </div>
+                    <div class="col-xs-9">
+                      <div class="zag">Мобильные сервисы</div>
+                      <div class="greytext">Самые легкие технологии для контакта с Вашими клиентами</div>
+                      <p class="ic">Получение обратной связи от клиентов </p>
+                      <p class="ic">Бесплатный канал рассылки сообщений об акциях и бонусах</p>
+                      <p class="ic">Школа клиентского сервиса</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <p class="text-center more">Подробнее</p>
+                    </div>
+                    <div class="col-xs-6">
+                      <p class="text-center testim">Отзыв / Опыт</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="testimonial imon1">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-3"><img src="img/face.png" alt="" class="img-responsive faces">
+                <div class="name">Петр Горшков</div>
+                <div class="under">Retail Director <br>HUGO BOSS Russia</div>
+              </div>
+              <div class="col-xs-9">
+                <h5>Отзыв  внедрения одного из инструментов:</h5>
+                <p class="txt">…около 80–85% наших клиентов используют смартфоны Apple либо Samsung. Приложение Passbook дало нам возможность коммуницировать с нашими клиентами на современном уровне, демонстрирующем в том числе то уважение, с которым мы к ним относимся.  </p>
+                <p class="txt2">…около 80–85% наших клиентов используют смартфоны Apple либо Samsung. Приложение Passbook дало нам возможность коммуницировать с нашими клиентами на современном уровне, демонстрирующем в том числе то уважение, с которым мы к ним относимся. <br><br>Использование Passbook позволило нам отказаться от почтовых и SMS-рассылок, которые нередко воспринимаются потребителем как обычный навязчивый спам, и это ощущение, как правило, только усиливается благодаря некачественному контенту и элементарному непрофессионализму его авторов. Luxury-ритейл предполагает наличие современных, изысканных и стильных инструментов коммуникации с клиентом. <br><br>Приложение Passbook позволяет не только персонифицировать сообщение, но и сделать его визуально интересным, приятным, не вызывающим раздражения. </p><span class="alltest">Весь отзыв</span><img src="img/qoute.png" alt="" class="img-responsive quote1"><img src="img/qoute.png" alt="" class="img-responsive quote2">
+              </div>
+            </div>
+          </div>
+      </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="block active_block"><img src="img/bigim_03.jpg" alt="" class="img-responsive topimg">
+                <div class="blockunder">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <div class="count">4</div><img src="img/bg4_i_03.png" alt=""><img src="img/bg4_i_14.png" alt=""><img src="img/bg4_i_10.png" alt="">
+                    </div>
+                    <div class="col-xs-9">
+                      <div class="zag">Интернет</div>
+                      <div class="greytext">Управляйте репутацией своей компании  в интернете</div>
+                      <p class="ic">Мониторинг социальных сетей, блогов, отзывов</p>
+                      <p class="ic">Устранение и вытеснение негатива</p>
+                      <p class="ic">Формирование позитивного имиджа и доверия к компании</p>
+                    </div>
+                  </div>
+                  <div class="row upd">
+                    <div class="col-xs-6">
+                      <p class="text-center more">Подробнее</p>
+                    </div>
+                    <div class="col-xs-6">
+                      <p class="text-center testim">Отзыв / Опыт</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="block"><img src="img/bigim_05.jpg" alt="" class="img-responsive topimg">
+                <div class="blockunder">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <div class="count">5</div><img src="img/bg4_i_03.png" alt=""><img src="img/bg4_i_14.png" alt=""><img src="img/bg4_i_10.png" alt="">
+                    </div>
+                    <div class="col-xs-9">
+                      <div class="zag">Call-центр</div>
+                      <div class="greytext">Обеспечивайте клиентам идеальное  телефонное обслуживание</div>
+                      <p class="ic">Удобные сервисы самообслуживания</p>
+                      <p class="ic">Контроль  качества работы операторов</p>
+                      <p class="ic">Мониторинг удовлетворенности клиентов и причин обращений</p>
+                    </div>
+                  </div>
+                  <div class="row upd">
+                    <div class="col-xs-6">
+                      <p class="text-center more">Подробнее</p>
+                    </div>
+                    <div class="col-xs-6">
+                      <p class="text-center testim">Отзыв / Опыт</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="block"><img src="img/bigim_07.jpg" alt="" class="img-responsive topimg">
+                <div class="blockunder">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <div class="count">6</div><img src="img/bg4_i_05.png" alt="" class="down4"><img src="img/bg4_i_09.png" alt="" class="down3"><img src="img/bg4_i_16.png" alt="" class="down4">
+                    </div>
+                    <div class="col-xs-9">
+                      <div class="zag lastzag">Финансовые <br>и учетные системы</div>
+                      <div class="greytext">Настройте свой бизнес на максимальную эффективность</div>
+                      <p class="ic">Комплексная автоматизация отношений с клиентами: CRM и ERP системы </p>
+                      <p class="ic">Повышение эффективности продаж и коммуникаций с потребителями</p>
+                      <p class="ic">Оптимизация внутренних бизнес-процессов</p>
+                    </div>
+                  </div>
+                  <div class="row upd2">
+                    <div class="col-xs-6">
+                      <p class="text-center more">Подробнее</p>
+                    </div>
+                    <div class="col-xs-6">
+                      <p class="text-center testim">Отзыв / Опыт</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="testimonial imon2">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-3"><img src="img/face.png" alt="" class="img-responsive faces">
+                <div class="name">Петр Горшков</div>
+                <div class="under">Retail Director <br>HUGO BOSS Russia</div>
+              </div>
+              <div class="col-xs-9">
+                <h5>Отзыв  внедрения одного из инструментов:</h5>
+                <p class="txt">…около 80–85% наших клиентов используют смартфоны Apple либо Samsung. Приложение Passbook дало нам возможность коммуницировать с нашими клиентами на современном уровне, демонстрирующем в том числе то уважение, с которым мы к ним относимся.  </p>
+                <p class="txt2">…около 80–85% наших клиентов используют смартфоны Apple либо Samsung. Приложение Passbook дало нам возможность коммуницировать с нашими клиентами на современном уровне, демонстрирующем в том числе то уважение, с которым мы к ним относимся. <br><br>Использование Passbook позволило нам отказаться от почтовых и SMS-рассылок, которые нередко воспринимаются потребителем как обычный навязчивый спам, и это ощущение, как правило, только усиливается благодаря некачественному контенту и элементарному непрофессионализму его авторов. Luxury-ритейл предполагает наличие современных, изысканных и стильных инструментов коммуникации с клиентом. <br><br>Приложение Passbook позволяет не только персонифицировать сообщение, но и сделать его визуально интересным, приятным, не вызывающим раздражения. </p><span class="alltest">Весь отзыв</span><img src="img/qoute.png" alt="" class="img-responsive quote1"><img src="img/qoute.png" alt="" class="img-responsive quote2">
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="bg5">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form">
+                <p class="zag">Протестируйте <span>наши услуги бесплатно </span><br>первый месяц и Вы неизбежно получите результат!</p>
+                <form id="frm2" method="post" action="php/submit.php" class="contactform1">
+                  <input type="text" name="name" placeholder="Ваш имя:" class="form-control frstclass validate[required]">
+                  <input type="text" name="phone" placeholder="Ваш телефон:" class="form-control phone  validate[required]">
+                  <input type="text" name="email" placeholder="Ваш email:" class="form-control email  validate[required]">
+                  <input name="utm_medium" value="&lt;? echo $utm_medium;?&gt;" type="hidden" class="utm_medium">
+                  <input name="utm_source" value="&lt;? echo $utm_source;?&gt;" type="hidden" class="utm_source">
+                  <input name="utm_campaign" value="&lt;? echo $utm_campaign;?&gt;" type="hidden" class="utm_campaign">
+                  <input name="utm_term" value="&lt;? echo $utm_term;?&gt;" type="hidden" class="utm_term">
+                  <input name="utm_content" value="&lt;? echo $utm_content;?&gt;" type="hidden" class="utm_content">
+                  <input name="block" value="&lt;? echo $block;?&gt;" type="hidden" class="block">
+                  <input name="keyword" value="&lt;? echo $keyword;?&gt;" type="hidden" class="keyword">
+                  <input name="position" value="&lt;? echo $position;?&gt;" type="hidden" class="position">
+                  <input name="action" value="" type="hidden">
+                  <button>Протестировать услугу</button>
+                </form>
+                <p class="conf">100% конфедициальность. Все ваши данные будут засекречены.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="bg6">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>Кто наши клиенты?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="block"><img src="img/clients_09.png" alt="" class="img-responsive pull-left">
+                <p class="desc">Страховые компании</p>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="block"><img src="img/clients_06.png" alt="" class="img-responsive pull-left">
+                <p class="desc">Банки</p>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="block"><img src="img/clients_03.png" alt="" class="img-responsive pull-left">
+                <p class="desc">Сети ресторанов </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="block"><img src="img/clients_16.png" alt="" class="img-responsive pull-left">
+                <p class="desc">Медицина</p>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="block"><img src="img/clients_15.png" alt="" class="img-responsive pull-left upd">
+                <p class="desc">Государственные <br>учреждения</p>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="block"><img src="img/clients_14.png" alt="" class="img-responsive pull-left">
+                <p class="desc">Сети отелей</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="block"><img src="img/clients_22.png" alt="" class="img-responsive pull-left">
+                <p class="desc">Операторы связи</p>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="block"><img src="img/clients_21.png" alt="" class="img-responsive pull-left">
+                <p class="desc">Авиакомпании</p>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="block"><img src="img/clients_20.png" alt="" class="img-responsive pull-left upd">
+                <p class="desc">Производители <br>товаров</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="block"><img src="img/clients_28.png" alt="" class="img-responsive pull-left">
+                <p class="desc">Образование</p>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="block"><img src="img/clients_27.png" alt="" class="img-responsive pull-left">
+                <p class="desc">Сети АЗС</p>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="block"><img src="img/clients_26.png" alt="" class="img-responsive pull-left">
+                <p class="desc">Розничные магазины</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="team" class="bg7">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>Команда профессионалов</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="block"><img src="img/cheloveki7.png" alt="" class="img-responsive im1 bgfaces"><img src="img/cheloveki5.png" alt="" class="img-responsive im2 bgfaces"><img src="img/cheloveki6.png" alt="" class="img-responsive im3 bgfaces"><img src="img/cheloveki8.png" alt="" class="img-responsive im4 bgfaces"><img src="img/cheloveki1.png" alt="" class="img-responsive im5 bgfaces"><img src="img/cheloveki2.png" alt="" class="img-responsive im6 bgfaces"><img src="img/cheloveki4.png" alt="" class="img-responsive im7 bgfaces"><img src="img/cheloveki3.png" alt="" class="img-responsive im8 bgfaces"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="rel">
+                <div class="act_img"><img src="img/cheloveki7.png" alt="" class="img-responsive"></div>
+              </div>
+            </div>
+            <div class="col-xs-5 blocks col-xs-offset-6">
+              <div class="bl1 active_block_text hidebl">
+                <div class="name">Харин Денис</div>
+                <div class="desc">Основатель, Генеральный директор</div>
+                <div class="about">Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".</div><span class="tog_btn">Подробнее</span>
+                <div class="row marg">
+                  <div class="col-xs-4">
+                    <p class="exp about_txt">Опыт работы</p>
+                    <p class="edu about_txt">Образование</p>
+                    <p class="result about_txt">Результат</p>
+                  </div>
+                  <div class="col-xs-7">
+                    <p class="exp2 about_txt2">10 лет</p>
+                    <p class="edu2 about_txt2">МАИ, МИРБИС</p>
+                    <p class="result2 about_txt2">34 компании с доходом +20%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bl2 hidebl">
+                <div class="name">Харин Денис2</div>
+                <div class="desc">Основатель, Генеральный директор</div>
+                <div class="about">Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".</div><span class="tog_btn">Подробнее</span>
+                <div class="row marg">
+                  <div class="col-xs-4">
+                    <p class="exp about_txt">Опыт работы</p>
+                    <p class="edu about_txt">Образование</p>
+                    <p class="result about_txt">Результат</p>
+                  </div>
+                  <div class="col-xs-7">
+                    <p class="exp2 about_txt2">10 лет</p>
+                    <p class="edu2 about_txt2">МАИ, МИРБИС</p>
+                    <p class="result2 about_txt2">34 компании с доходом +20%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bl3 hidebl">
+                <div class="name">Харин Денис3</div>
+                <div class="desc">Основатель, Генеральный директор</div>
+                <div class="about">Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".</div><span class="tog_btn">Подробнее</span>
+                <div class="row marg">
+                  <div class="col-xs-4">
+                    <p class="exp about_txt">Опыт работы</p>
+                    <p class="edu about_txt">Образование</p>
+                    <p class="result about_txt">Результат</p>
+                  </div>
+                  <div class="col-xs-7">
+                    <p class="exp2 about_txt2">10 лет</p>
+                    <p class="edu2 about_txt2">МАИ, МИРБИС</p>
+                    <p class="result2 about_txt2">34 компании с доходом +20%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bl4 hidebl">
+                <div class="name">Харин Денис4</div>
+                <div class="desc">Основатель, Генеральный директор</div>
+                <div class="about">Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".</div><span class="tog_btn">Подробнее</span>
+                <div class="row marg">
+                  <div class="col-xs-4">
+                    <p class="exp about_txt">Опыт работы</p>
+                    <p class="edu about_txt">Образование</p>
+                    <p class="result about_txt">Результат</p>
+                  </div>
+                  <div class="col-xs-7">
+                    <p class="exp2 about_txt2">10 лет</p>
+                    <p class="edu2 about_txt2">МАИ, МИРБИС</p>
+                    <p class="result2 about_txt2">34 компании с доходом +20%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bl5 hidebl">
+                <div class="name">Харин Денис5</div>
+                <div class="desc">Основатель, Генеральный директор</div>
+                <div class="about">Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".</div><span class="tog_btn">Подробнее</span>
+                <div class="row marg">
+                  <div class="col-xs-4">
+                    <p class="exp about_txt">Опыт работы</p>
+                    <p class="edu about_txt">Образование</p>
+                    <p class="result about_txt">Результат</p>
+                  </div>
+                  <div class="col-xs-7">
+                    <p class="exp2 about_txt2">10 лет</p>
+                    <p class="edu2 about_txt2">МАИ, МИРБИС</p>
+                    <p class="result2 about_txt2">34 компании с доходом +20%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bl6 hidebl">
+                <div class="name">Харин Денис6</div>
+                <div class="desc">Основатель, Генеральный директор</div>
+                <div class="about">Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".</div><span class="tog_btn">Подробнее</span>
+                <div class="row marg">
+                  <div class="col-xs-4">
+                    <p class="exp about_txt">Опыт работы</p>
+                    <p class="edu about_txt">Образование</p>
+                    <p class="result about_txt">Результат</p>
+                  </div>
+                  <div class="col-xs-7">
+                    <p class="exp2 about_txt2">10 лет</p>
+                    <p class="edu2 about_txt2">МАИ, МИРБИС</p>
+                    <p class="result2 about_txt2">34 компании с доходом +20%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bl7 hidebl">
+                <div class="name">Харин Денис7</div>
+                <div class="desc">Основатель, Генеральный директор</div>
+                <div class="about">Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".</div><span class="tog_btn">Подробнее</span>
+                <div class="row marg">
+                  <div class="col-xs-4">
+                    <p class="exp about_txt">Опыт работы</p>
+                    <p class="edu about_txt">Образование</p>
+                    <p class="result about_txt">Результат</p>
+                  </div>
+                  <div class="col-xs-7">
+                    <p class="exp2 about_txt2">10 лет</p>
+                    <p class="edu2 about_txt2">МАИ, МИРБИС</p>
+                    <p class="result2 about_txt2">34 компании с доходом +20%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bl8 hidebl">
+                <div class="name">Харин Денис8</div>
+                <div class="desc">Основатель, Генеральный директор</div>
+                <div class="about">Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".</div><span class="tog_btn">Подробнее</span>
+                <div class="row marg">
+                  <div class="col-xs-4">
+                    <p class="exp about_txt">Опыт работы</p>
+                    <p class="edu about_txt">Образование</p>
+                    <p class="result about_txt">Результат</p>
+                  </div>
+                  <div class="col-xs-7">
+                    <p class="exp2 about_txt2">10 лет</p>
+                    <p class="edu2 about_txt2">МАИ, МИРБИС</p>
+                    <p class="result2 about_txt2">34 компании с доходом +20%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="test" class="bg8">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>Время попробовать CRM Expert:</h2>
+              <p class="text-center under">
+                 
+                Мы абсолютно бесплатно в течение месяца вндерим Вам технологию <br>по увеличению клиентов. Если Вас что то не устроит - вы можете отказаться от услуг.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form">
+                <div class="shape">
+                  <div class="row">
+                    <div class="col-xs-8">
+                      <p class="name_step">Ваша контактная информация</p>
+                    </div>
+                    <div class="col-xs-4">
+                      <p class="step">Шаг 1 из 2</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row include_form">
+                  <div class="col-xs-12">
+                    <form id="frm3" method="post" action="php/submit.php" class="contactform1">
+                      <input type="text" name="name" placeholder="Ваш имя:" class="form-control frstclass validate[required]">
+                      <input type="text" name="phone" placeholder="Ваш телефон:" class="form-control phone  validate[required]">
+                      <input type="text" name="email" placeholder="Ваш email:" class="form-control email  validate[required]">
+                      <input name="utm_medium" value="&lt;? echo $utm_medium;?&gt;" type="hidden" class="utm_medium">
+                      <input name="utm_source" value="&lt;? echo $utm_source;?&gt;" type="hidden" class="utm_source">
+                      <input name="utm_campaign" value="&lt;? echo $utm_campaign;?&gt;" type="hidden" class="utm_campaign">
+                      <input name="utm_term" value="&lt;? echo $utm_term;?&gt;" type="hidden" class="utm_term">
+                      <input name="utm_content" value="&lt;? echo $utm_content;?&gt;" type="hidden" class="utm_content">
+                      <input name="block" value="&lt;? echo $block;?&gt;" type="hidden" class="block">
+                      <input name="keyword" value="&lt;? echo $keyword;?&gt;" type="hidden" class="keyword">
+                      <input name="position" value="&lt;? echo $position;?&gt;" type="hidden" class="position">
+                      <input name="action" value="Последняя форма" type="hidden">
+                      <div class="locked"><img src="img/locked.png" alt="" class="pull-left">
+                        <p>100% конфедициальность. Все ваши данные будут засекречены.</p>
+                      </div>
+                      <button>Продолжить</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div id="contacts" class="map">
+      <div class="ymaps"></div>
+      <div id="map"></div>
+    </div>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6">
+              <p>© 2015 Система улучшения лояльности клиентов CRS Expert</p>
+            </div>
+            <div class="col-xs-6">
+              <p class="dev">Разработка сайта - <a href="http://маркетинговое-агентство.рф/" target="_blank"> GulfStream</a></p>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru_RU"></script>
+  </body>
+</html>

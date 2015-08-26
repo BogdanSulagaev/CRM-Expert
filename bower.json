@@ -1,0 +1,20 @@
+{
+  "name": "landing",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "bootstrap": "~3.3.5"
+  },
+  "devDependencies": {
+    "html5shiv": "~3.7.3"
+  }
+}

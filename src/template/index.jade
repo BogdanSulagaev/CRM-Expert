@@ -1,0 +1,655 @@
+doctype
+html
+    include _mixin.jade
+    head
+        title 
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+        meta(name='description', content='')
+        meta(name='keywords', content='')
+        meta(name='viewport', content='width=1170')
+        meta(content='telephone=no', name='format-detection')
+        link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Roboto:300,cyrillic-ext')
+        link(rel='stylesheet', href='css/main.css')
+        <!--[if lt IE 9]>
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+        <![endif]-->
+    body#main
+        header
+            +root
+                .col-xs-2
+                    .logo
+                        img(src="img/logo.png", alt="", class="img-responsive")
+                .col-xs-7
+                    ul
+                        li
+                            a(href="#what") Что вы получите?
+                        li
+                            a(href="#tools") Инструменты
+                        li
+                            a(href="#team") Наша команда
+                        li
+                            a(href="#test") Тестовый период
+                        li
+                            a(href="#contacts") Контакты
+                .col-xs-3
+                    .block
+                        .phone
+                            a(href="tel:") +7 (495) 000 00 00
+                        .callback
+                            img(src="img/phone.png", alt="")
+                            a(href="#callback") Заказать звонок
+        section.bg1
+            +root
+                .col-xs-12
+                    h1 Решаем задачи улучшения качества обслуживания клиентов за месяц, по технологии CRM Expert
+                    p.under
+                        |14 лет опыта внедрения в такие компании как: 
+                        br
+                        |Сбербанк, МГТС, Land Rover, Мегафон, HP, Газпром, НТВ и другие.
+                    button.buy Заказать услугу на месяц бесплатно
+                    .down
+                        img.img-responsive(src="img/down.png", alt="")
+        section.bg2#bg2
+            +root
+                .col-xs-12
+                    h2 По каким причинам вы теряете клиентов?
+            +root
+                .col-xs-6
+                    .block
+                        .bord
+                            img.img-responsive.pull-left(src="img/why_06.png", alt="")
+                        .text
+                            h4 65% клиентов 
+                            p.min отказываются от услуг компании после прочтения негативных отзывов.
+                .col-xs-6
+                    .block
+                        .bord
+                            img.img-responsive.pull-left(src="img/why_03.png", alt="")
+                        .text
+                            h4 15% недовольных 
+                            p.min клиентов жалуются, остальные 85% молча уходят к конкурентам
+            +root
+                .col-xs-6
+                    .block
+                        .bord
+                            img.img-responsive.pull-left(src="img/why_14.png", alt="")
+                        .text
+                            h4 90% недовольных 
+                            p.min клиентов больше не возвращаются
+                .col-xs-6
+                    .block
+                        .bord
+                            img.img-responsive.pull-left(src="img/why_11.png", alt="")
+                        .text
+                            h4 До 40% клиентов  
+                            p.min теряются из-за непрофессиональных и нелояльных сотрудников
+            +root
+                .col-xs-12
+                    .form
+                        p.zag
+                            | Получите подробную консультацию
+                            br
+                            | от специалиста с опытом работы 
+                            span более 10 лет
+                        include form.jade
+                        p.conf.
+                            100% конфедициальность. Все ваши данные будут засекречены.
+        section.bg3#what
+            +root
+                .col-xs-12
+                    h2 Что Вы получите, работая с нами?
+            +root  
+                .col-xs-12
+                    img.img-responsive.whitearr1(src="img/whitearr1.png", alt="")
+                    img.img-responsive.whitearr2(src="img/whitearr2.png", alt="") 
+                    p.profitup.wow.pulse(data-wow-offset="100") Увеличение прибыли от 10%
+                    .bl1
+                        img.img-responsive.pull-left(src="img/d_03.png", alt="")
+                        p.txt Сохранение и преумножение числа постоянных покупателей
+                    .bl2
+                        img.img-responsive.pull-left(src="img/d_06.png", alt="")
+                        p.txt Помогаем добиться результата за счет улучшения следующих показателей:
+                    .bigblock
+                        .row
+                            .col-xs-4
+                                .minbord.wow.fadeIn(data-wow-delay="0s")
+                                    | 1
+                            .col-xs-4
+                                .minbord.wow.fadeIn(data-wow-delay=".6s")
+                                    | 2
+                            .col-xs-4
+                                .minbord.wow.fadeIn(data-wow-delay="1.2s")
+                                    | 3
+                    .complete.wow.pulse(data-wow-offset="100")
+                        | дополнительный 
+                        br
+                        span
+                            | ДОХОД
+            .abs
+                +root
+                    .col-xs-4
+                        .blog
+                            img(src="img/ics_03.png", alt="" class="im1")
+                            .newtxt.tm1 Информируемость потребителей
+                    .col-xs-4
+                        .blog
+                            img(src="img/ics_05.png", alt="" class="im2")
+                            .newtxt Удовлетворенность и лояльность клиентов
+                    .col-xs-4
+                        .blog
+                            img(src="img/ics_07.png", alt="" class="im3")
+                            .newtxt.tm3 Эффективность работы персонала
+        section.bg4#tools
+            +root
+                .col-xs-12
+                    h2 Инструменты управления качеством обслуживания и повышения лояльности клиентов
+            +root
+                .col-xs-4
+                    .block.active_block
+                        img.img-responsive.topimg(src="img/bigim_03.jpg", alt="")
+                        .blockunder
+                            .row
+                                .col-xs-3
+                                    .count
+                                        | 1
+                                    img(src="img/bg4_i_03.png", alt="")
+                                    img(src="img/bg4_i_14.png", alt="")
+                                    img(src="img/bg4_i_10.png", alt="")
+                                .col-xs-9
+                                    .zag
+                                        | Консалтинг и обучение
+                                    .greytext
+                                        | Получите пошаговую схему достижения клиентского счастья
+                                    p.ic
+                                        | Исследования удовлетворенности покупателей
+                                    p.ic
+                                        | Внедрение Программ лояльности «под ключ»
+                                    p.ic
+                                        | Школа клиентского сервиса
+                            .row
+                                .col-xs-6
+                                    p.text-center.more
+                                        | Подробнее
+                                .col-xs-6
+                                    p.text-center.testim
+                                        | Отзыв / Опыт
+                .col-xs-4
+                    .block
+                        img.img-responsive.topimg(src="img/bigim_05.jpg", alt="")
+                        .blockunder
+                            .row
+                                .col-xs-3
+                                    .count
+                                        | 2
+                                    img(src="img/bg4_i_03.png", alt="")
+                                    img(src="img/bg4_i_14.png", alt="")
+                                    img(src="img/bg4_i_10.png", alt="")
+                                .col-xs-9
+                                    .zag
+                                        | Интерактивные планшеты
+                                    .greytext
+                                        | Оценивайте удовлетворенность, повышайте конверсию в точках продаж
+                                    p.ic
+                                        | Самые легкие технологии для контакта с Вашими клиентами
+                                    p.ic
+                                        | Трансляция рекламного контента
+                                    p.ic.down2
+                                        | Контроль качества работы персонала
+                            .row
+                                .col-xs-6
+                                    p.text-center.more
+                                        | Подробнее
+                                .col-xs-6
+                                    p.text-center.testim
+                                        | Отзыв / Опыт
+                .col-xs-4
+                    .block
+                        img.img-responsive.topimg(src="img/bigim_07.jpg", alt="")
+                        .blockunder
+                            .row
+                                .col-xs-3
+                                    .count
+                                        | 3
+                                    img(src="img/bg4_i_05.png", alt="" class="down1")
+                                    img(src="img/bg4_i_09.png", alt="" class="")
+                                    img(src="img/bg4_i_16.png", alt="" class="")
+                                .col-xs-9
+                                    .zag
+                                        | Мобильные сервисы
+                                    .greytext
+                                        | Самые легкие технологии для контакта с Вашими клиентами
+                                    p.ic
+                                        | Получение обратной связи от клиентов 
+                                    p.ic
+                                        | Бесплатный канал рассылки сообщений об акциях и бонусах
+
+                                    p.ic
+                                        | Школа клиентского сервиса
+                            .row
+                                .col-xs-6
+                                    p.text-center.more
+                                        | Подробнее
+                                .col-xs-6
+                                    p.text-center.testim
+                                        | Отзыв / Опыт
+            .testimonial.imon1
+                +root
+                    .col-xs-3
+                        img.img-responsive.faces(src="img/face.png", alt="")
+                        .name
+                            | Петр Горшков
+                        .under
+                            | Retail Director 
+                            br
+                            | HUGO BOSS Russia
+                    .col-xs-9
+                        h5 Отзыв  внедрения одного из инструментов:
+                        p.txt …около 80–85% наших клиентов используют смартфоны Apple либо Samsung. Приложение Passbook дало нам возможность коммуницировать с нашими клиентами на современном уровне, демонстрирующем в том числе то уважение, с которым мы к ним относимся.  
+                        p.txt2
+                            | …около 80–85% наших клиентов используют смартфоны Apple либо Samsung. Приложение Passbook дало нам возможность коммуницировать с нашими клиентами на современном уровне, демонстрирующем в том числе то уважение, с которым мы к ним относимся. 
+                            br
+                            br
+                            | Использование Passbook позволило нам отказаться от почтовых и SMS-рассылок, которые нередко воспринимаются потребителем как обычный навязчивый спам, и это ощущение, как правило, только усиливается благодаря некачественному контенту и элементарному непрофессионализму его авторов. Luxury-ритейл предполагает наличие современных, изысканных и стильных инструментов коммуникации с клиентом. 
+                            br
+                            br
+                            | Приложение Passbook позволяет не только персонифицировать сообщение, но и сделать его визуально интересным, приятным, не вызывающим раздражения. 
+                        span.alltest
+                            | Весь отзыв
+                        img.img-responsive.quote1(src="img/qoute.png", alt="")
+                        img.img-responsive.quote2(src="img/qoute.png", alt="")
+            +root
+                .col-xs-4
+                    .block.active_block
+                        img.img-responsive.topimg(src="img/bigim_03.jpg", alt="")
+                        .blockunder
+                            .row
+                                .col-xs-3
+                                    .count
+                                        | 4
+                                    img(src="img/bg4_i_03.png", alt="")
+                                    img(src="img/bg4_i_14.png", alt="")
+                                    img(src="img/bg4_i_10.png", alt="")
+                                .col-xs-9
+                                    .zag
+                                        | Интернет
+                                    .greytext
+                                        | Управляйте репутацией своей компании  в интернете
+                                    p.ic
+                                        | Мониторинг социальных сетей, блогов, отзывов
+                                    p.ic
+                                        | Устранение и вытеснение негатива
+                                    p.ic
+                                        | Формирование позитивного имиджа и доверия к компании
+                            .row.upd
+                                .col-xs-6
+                                    p.text-center.more
+                                        | Подробнее
+                                .col-xs-6
+                                    p.text-center.testim
+                                        | Отзыв / Опыт
+                .col-xs-4
+                    .block
+                        img.img-responsive.topimg(src="img/bigim_05.jpg", alt="")
+                        .blockunder
+                            .row
+                                .col-xs-3
+                                    .count
+                                        | 5
+                                    img(src="img/bg4_i_03.png", alt="")
+                                    img(src="img/bg4_i_14.png", alt="")
+                                    img(src="img/bg4_i_10.png", alt="")
+                                .col-xs-9
+                                    .zag
+                                        | Call-центр
+                                    .greytext
+                                        | Обеспечивайте клиентам идеальное  телефонное обслуживание
+                                    p.ic
+                                        | Удобные сервисы самообслуживания
+                                    p.ic
+                                        | Контроль  качества работы операторов
+                                    p.ic
+                                        | Мониторинг удовлетворенности клиентов и причин обращений
+                            .row.upd
+                                .col-xs-6
+                                    p.text-center.more
+                                        | Подробнее
+                                .col-xs-6
+                                    p.text-center.testim
+                                        | Отзыв / Опыт
+                .col-xs-4
+                    .block
+                        img.img-responsive.topimg(src="img/bigim_07.jpg", alt="")
+                        .blockunder
+                            .row
+                                .col-xs-3
+                                    .count
+                                        | 6
+                                    img(src="img/bg4_i_05.png", alt="" class="down4")
+                                    img(src="img/bg4_i_09.png", alt="" class="down3")
+                                    img(src="img/bg4_i_16.png", alt="" class="down4")
+                                .col-xs-9
+                                    .zag.lastzag
+                                        | Финансовые 
+                                        br
+                                        |и учетные системы
+                                    .greytext
+                                        | Настройте свой бизнес на максимальную эффективность
+                                    p.ic
+                                        | Комплексная автоматизация отношений с клиентами: CRM и ERP системы 
+                                    p.ic
+                                        | Повышение эффективности продаж и коммуникаций с потребителями
+                                    p.ic
+                                        | Оптимизация внутренних бизнес-процессов
+                            .row.upd2
+                                .col-xs-6
+                                    p.text-center.more
+                                        | Подробнее
+                                .col-xs-6
+                                    p.text-center.testim
+                                        | Отзыв / Опыт
+            .testimonial.imon2
+                +root
+                    .col-xs-3
+                        img.img-responsive.faces(src="img/face.png", alt="")
+                        .name
+                            | Петр Горшков
+                        .under
+                            | Retail Director 
+                            br
+                            | HUGO BOSS Russia
+                    .col-xs-9
+                        h5 Отзыв  внедрения одного из инструментов:
+                        p.txt …около 80–85% наших клиентов используют смартфоны Apple либо Samsung. Приложение Passbook дало нам возможность коммуницировать с нашими клиентами на современном уровне, демонстрирующем в том числе то уважение, с которым мы к ним относимся.  
+                        p.txt2
+                            | …около 80–85% наших клиентов используют смартфоны Apple либо Samsung. Приложение Passbook дало нам возможность коммуницировать с нашими клиентами на современном уровне, демонстрирующем в том числе то уважение, с которым мы к ним относимся. 
+                            br
+                            br
+                            | Использование Passbook позволило нам отказаться от почтовых и SMS-рассылок, которые нередко воспринимаются потребителем как обычный навязчивый спам, и это ощущение, как правило, только усиливается благодаря некачественному контенту и элементарному непрофессионализму его авторов. Luxury-ритейл предполагает наличие современных, изысканных и стильных инструментов коммуникации с клиентом. 
+                            br
+                            br
+                            | Приложение Passbook позволяет не только персонифицировать сообщение, но и сделать его визуально интересным, приятным, не вызывающим раздражения. 
+                        span.alltest
+                            | Весь отзыв
+                        img.img-responsive.quote1(src="img/qoute.png", alt="")
+                        img.img-responsive.quote2(src="img/qoute.png", alt="")
+        section.bg5
+            +root
+                .col-xs-12
+                    .form
+                        p.zag
+                            | Протестируйте 
+                            span
+                                | наши услуги бесплатно 
+                            br
+                            | первый месяц и Вы неизбежно получите результат!
+                        include form.jade
+                        p.conf.
+                            100% конфедициальность. Все ваши данные будут засекречены.
+        section.bg6
+            +root
+                .col-xs-12
+                    h2 Кто наши клиенты?
+            +root
+                .col-xs-4
+                    .block
+                        img.img-responsive.pull-left(src="img/clients_09.png", alt="")
+                        p.desc.
+                            Страховые компании
+                .col-xs-4
+                    .block
+                        img.img-responsive.pull-left(src="img/clients_06.png", alt="")
+                        p.desc.
+                            Банки
+                .col-xs-4
+                    .block
+                        img.img-responsive.pull-left(src="img/clients_03.png", alt="")
+                        p.desc.
+                            Сети ресторанов 
+            +root
+                .col-xs-4
+                    .block
+                        img.img-responsive.pull-left(src="img/clients_16.png", alt="")
+                        p.desc.
+                            Медицина
+                .col-xs-4
+                    .block
+                        img.img-responsive.pull-left.upd(src="img/clients_15.png", alt="")
+                        p.desc
+                            |Государственные 
+                            br
+                            |учреждения
+                .col-xs-4
+                    .block
+                        img.img-responsive.pull-left(src="img/clients_14.png", alt="")
+                        p.desc.
+                            Сети отелей
+            +root
+                .col-xs-4
+                    .block
+                        img.img-responsive.pull-left(src="img/clients_22.png", alt="")
+                        p.desc.
+                            Операторы связи
+                .col-xs-4
+                    .block
+                        img.img-responsive.pull-left(src="img/clients_21.png", alt="")
+                        p.desc.
+                            Авиакомпании
+                .col-xs-4
+                    .block
+                        img.img-responsive.pull-left.upd(src="img/clients_20.png", alt="")
+                        p.desc
+                            |Производители 
+                            br
+                            |товаров
+            +root
+                .col-xs-4
+                    .block
+                        img.img-responsive.pull-left(src="img/clients_28.png", alt="")
+                        p.desc.
+                            Образование
+                .col-xs-4
+                    .block
+                        img.img-responsive.pull-left(src="img/clients_27.png", alt="")
+                        p.desc.
+                            Сети АЗС
+                .col-xs-4
+                    .block
+                        img.img-responsive.pull-left(src="img/clients_26.png", alt="")
+                        p.desc.
+                            Розничные магазины
+        section.bg7#team
+            +root
+                .col-xs-12
+                    h2 Команда профессионалов
+            +root
+                .col-xs-12
+                    .block
+                        img.img-responsive.im1.bgfaces(src="img/cheloveki7.png", alt="")
+                        img.img-responsive.im2.bgfaces(src="img/cheloveki5.png", alt="")
+                        img.img-responsive.im3.bgfaces(src="img/cheloveki6.png", alt="")
+                        img.img-responsive.im4.bgfaces(src="img/cheloveki8.png", alt="")
+                        img.img-responsive.im5.bgfaces(src="img/cheloveki1.png", alt="")
+                        img.img-responsive.im6.bgfaces(src="img/cheloveki2.png", alt="")
+                        img.img-responsive.im7.bgfaces(src="img/cheloveki4.png", alt="")
+                        img.img-responsive.im8.bgfaces(src="img/cheloveki3.png", alt="")
+            +root
+                .col-xs-6
+                    .rel
+                        .act_img
+                            img(src="img/cheloveki7.png", alt="", class="img-responsive")
+                .col-xs-5.blocks.col-xs-offset-6
+                    .bl1.active_block_text.hidebl
+                        .name Харин Денис
+                        .desc Основатель, Генеральный директор
+                        .about.
+                            Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".
+                        span.tog_btn Подробнее
+                        .row.marg
+                            .col-xs-4
+                                p.exp.about_txt Опыт работы
+                                p.edu.about_txt Образование
+                                p.result.about_txt Результат
+                            .col-xs-7
+                                p.exp2.about_txt2 10 лет
+                                p.edu2.about_txt2 МАИ, МИРБИС
+                                p.result2.about_txt2 34 компании с доходом +20%
+                    .bl2.hidebl
+                        .name Харин Денис2
+                        .desc Основатель, Генеральный директор
+                        .about.
+                            Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".
+                        span.tog_btn Подробнее
+                        .row.marg
+                            .col-xs-4
+                                p.exp.about_txt Опыт работы
+                                p.edu.about_txt Образование
+                                p.result.about_txt Результат
+                            .col-xs-7
+                                p.exp2.about_txt2 10 лет
+                                p.edu2.about_txt2 МАИ, МИРБИС
+                                p.result2.about_txt2 34 компании с доходом +20%
+                    .bl3.hidebl
+                        .name Харин Денис3
+                        .desc Основатель, Генеральный директор
+                        .about.
+                            Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".
+                        span.tog_btn Подробнее
+                        .row.marg
+                            .col-xs-4
+                                p.exp.about_txt Опыт работы
+                                p.edu.about_txt Образование
+                                p.result.about_txt Результат
+                            .col-xs-7
+                                p.exp2.about_txt2 10 лет
+                                p.edu2.about_txt2 МАИ, МИРБИС
+                                p.result2.about_txt2 34 компании с доходом +20%
+                    .bl4.hidebl
+                        .name Харин Денис4
+                        .desc Основатель, Генеральный директор
+                        .about.
+                            Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".
+                        span.tog_btn Подробнее
+                        .row.marg
+                            .col-xs-4
+                                p.exp.about_txt Опыт работы
+                                p.edu.about_txt Образование
+                                p.result.about_txt Результат
+                            .col-xs-7
+                                p.exp2.about_txt2 10 лет
+                                p.edu2.about_txt2 МАИ, МИРБИС
+                                p.result2.about_txt2 34 компании с доходом +20%
+                    .bl5.hidebl
+                        .name Харин Денис5
+                        .desc Основатель, Генеральный директор
+                        .about.
+                            Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".
+                        span.tog_btn Подробнее
+                        .row.marg
+                            .col-xs-4
+                                p.exp.about_txt Опыт работы
+                                p.edu.about_txt Образование
+                                p.result.about_txt Результат
+                            .col-xs-7
+                                p.exp2.about_txt2 10 лет
+                                p.edu2.about_txt2 МАИ, МИРБИС
+                                p.result2.about_txt2 34 компании с доходом +20%
+                    .bl6.hidebl
+                        .name Харин Денис6
+                        .desc Основатель, Генеральный директор
+                        .about.
+                            Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".
+                        span.tog_btn Подробнее
+                        .row.marg
+                            .col-xs-4
+                                p.exp.about_txt Опыт работы
+                                p.edu.about_txt Образование
+                                p.result.about_txt Результат
+                            .col-xs-7
+                                p.exp2.about_txt2 10 лет
+                                p.edu2.about_txt2 МАИ, МИРБИС
+                                p.result2.about_txt2 34 компании с доходом +20%
+                    .bl7.hidebl
+                        .name Харин Денис7
+                        .desc Основатель, Генеральный директор
+                        .about.
+                            Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".
+                        span.tog_btn Подробнее
+                        .row.marg
+                            .col-xs-4
+                                p.exp.about_txt Опыт работы
+                                p.edu.about_txt Образование
+                                p.result.about_txt Результат
+                            .col-xs-7
+                                p.exp2.about_txt2 10 лет
+                                p.edu2.about_txt2 МАИ, МИРБИС
+                                p.result2.about_txt2 34 компании с доходом +20%
+                    .bl8.hidebl
+                        .name Харин Денис8
+                        .desc Основатель, Генеральный директор
+                        .about.
+                            Образование: Московский авиационный институт (МАИ), Московская Международная высшая школа бизнеса МИРБИС, специализация "Стратегический менеджмент и предпринимательство".
+                        span.tog_btn Подробнее
+                        .row.marg
+                            .col-xs-4
+                                p.exp.about_txt Опыт работы
+                                p.edu.about_txt Образование
+                                p.result.about_txt Результат
+                            .col-xs-7
+                                p.exp2.about_txt2 10 лет
+                                p.edu2.about_txt2 МАИ, МИРБИС
+                                p.result2.about_txt2 34 компании с доходом +20%
+        section.bg8#test
+            +root
+                .col-xs-12
+                    h2 Время попробовать CRM Expert:
+                    p.text-center.under 
+                        | Мы абсолютно бесплатно в течение месяца вндерим Вам технологию 
+                        br
+                        | по увеличению клиентов. Если Вас что то не устроит - вы можете отказаться от услуг.
+            +root
+                .col-xs-12
+                    .form
+                        .shape
+                            .row
+                                .col-xs-8
+                                    p.name_step Ваша контактная информация
+                                .col-xs-4
+                                    p.step Шаг 1 из 2
+
+                        .row.include_form
+                            .col-xs-12
+                                include form2.jade
+        .map#contacts
+            .ymaps
+            #map
+        footer
+            +root
+                .col-xs-6
+                    p © 2015 Система улучшения лояльности клиентов CRS Expert
+                .col-xs-6
+                    p.dev Разработка сайта - 
+                        a(href="http://маркетинговое-агентство.рф/" target="_blank")  GulfStream
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        script(src="js/main.js")
+        script(src="http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru_RU")
