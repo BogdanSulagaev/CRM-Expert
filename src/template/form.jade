@@ -1,5 +1,5 @@
 form(id='frm2', method='post', action='php/submit.php', class='contactform1')
-    input(type='text', name='name', placeholder='Ваш имя:', class='form-control frstclass validate[required]')
+    input(type='text', name='name', placeholder='Ваше имя:', class='form-control frstclass validate[required]')
     input(type='text', name='phone', placeholder='Ваш телефон:', class='form-control phone  validate[required]')
     input(type='text', name='email', placeholder='Ваш email:', class='form-control email  validate[required]')
     input(name='utm_medium', class='utm_medium', value='<? echo $utm_medium;?>', type='hidden')
@@ -10,5 +10,5 @@ form(id='frm2', method='post', action='php/submit.php', class='contactform1')
     input(name='block', class='block', value='<? echo $block;?>', type='hidden')
     input(name='keyword', class='keyword', value='<? echo $keyword;?>', type='hidden')
     input(name='position', class='position', value='<? echo $position;?>', type='hidden')
-    input(name='action', value='', type='hidden')
-    button Протестировать услугу
+    input(name='action', value='Оставить заявку сейчас', type='hidden')
+    button Оставить заявку сейчас

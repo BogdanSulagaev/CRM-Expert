@@ -1,5 +1,5 @@
-form(id='frm3', method='post', action='php/submit.php', class='contactform1')
-    input(type='text', name='name', placeholder='Ваш имя:', class='form-control frstclass validate[required]')
+form(id='frm3', method='post', action='php/submit.php', class='contactform2')
+    input(type='text', name='name', placeholder='Ваше имя:', class='form-control frstclass validate[required]')
     input(type='text', name='phone', placeholder='Ваш телефон:', class='form-control phone  validate[required]')
     input(type='text', name='email', placeholder='Ваш email:', class='form-control email  validate[required]')
     input(name='utm_medium', class='utm_medium', value='<? echo $utm_medium;?>', type='hidden')
@@ -14,4 +14,4 @@ form(id='frm3', method='post', action='php/submit.php', class='contactform1')
     .locked
         img.pull-left(src="img/locked.png", alt="")
         p 100% конфедициальность. Все ваши данные будут засекречены.
-    button Продолжить
+    button Отправить заявку

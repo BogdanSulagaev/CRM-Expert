@@ -49,7 +49,7 @@ var config = {
     server: {
         baseDir: "./build"
     },
-    tunnel: true,
+    tunnel: false,
     host: 'localhost',
     port: 9000,
     logPrefix: "Frontend_Developer"
@@ -69,7 +69,7 @@ var config = {
 gulp.task('jade:build', function() {
     gulp.src(['./src/template/*.jade', '!./src/template/_*.jade'])
         .pipe(jade({
-            pretty: true
+            pretty: false
         }))  // Собираем Jade только в папке ./assets/template/ исключая файлы с _*
         .on('error', console.log) // Если есть ошибки, выводим и продолжаем
     .pipe(gulp.dest('./build/')) // Записываем собранные файлы
@@ -162,7 +162,6 @@ gulp.task('bower', function() {
   return bower()
     .pipe(gulp.dest('build/'))
 });
-
 
 
 

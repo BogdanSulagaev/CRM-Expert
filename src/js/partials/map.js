@@ -15,7 +15,7 @@ $(function(){
 
 	    myMap.geoObjects.add(myPlacemark);
 
-	    myMap.balloon.open([55.7770091,37.5896875], "<div class='mapAdress'><p class='str1'>Адрес:</p><p class='str2'>Москва, ул. Невская, д.7</p><p class='str3'>Телефон:</p><p class='str4'><a href='tel:+79452343321'>+7 (945) 234 33 21</a></p></div>", {
+	    myMap.balloon.open([55.7770091,37.5896875], "<div class='mapAdress'><p class='str1'>Адрес:</p><p class='str2'>Москва, Шаболовка 31Б </p><p class='str3'>Телефон:</p><p class='str4'><a href='tel:+74953696821'>+7 (495) 369 68 21</a></p><p class='str3'>Отдел продаж: <a href='mailto:sale@crmex.ru'>sale@crmex.ru</a></p><p class='str3'>Прием на работу: <a href='mailto:hr@crmex.ru'>hr@crmex.ru</a></p><p class='str3'>Другие вопросы: <a href='mailto:info@crmex.ru'>info@crmex.ru</a></p></div>", {
 	        closeButton: false
 	    });
 

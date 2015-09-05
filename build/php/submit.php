@@ -241,6 +241,7 @@ Geneva, sans-serif; font-size: 36px; text-align: center; margin-top:0px; margin-
                                     <div align="left" class="article-content">
                                             <multiline label="Description"><b>Имя:</b> '.$name.'</multiline><br>
                                             <multiline label="Description"><b>Телефон:</b> '.$phone.'</multiline><br>
+                                            <multiline label="Description"><b>Email:</b> '.$email.'</multiline><br>
                                             <multiline label="Description"><b>Форма заказа:</b> '.$action.'</multiline><br>
                                             <multiline label="Description"><b>Регион/Город:</b> '.$ipinfo->region.' / '.$ipinfo->city.'</multiline><br>
                                             <multiline label="Description"><b>IP:</b> '.$_SERVER['REMOTE_ADDR'].'</multiline>

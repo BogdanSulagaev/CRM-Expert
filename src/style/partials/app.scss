@@ -1,3 +1,108 @@
+/* Account for fixed navbar */
+body {
+  min-width: 1200px;
+}
+
+/* Finesse the page header spacing */
+.page-header {
+  margin-bottom: 30px;
+}
+.page-header .lead {
+  margin-bottom: 10px;
+}
+
+
+/* Non-responsive overrides
+ *
+ * Utilitze the following CSS to disable the responsive-ness of the container,
+ * grid system, and navbar.
+ */
+
+/* Reset the container */
+.container {
+  width: 1200px;
+  min-width: 1200px;
+}
+
+
+
+.container .navbar-header,
+.container .navbar-collapse {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Always float the navbar header */
+.navbar-header {
+  float: left;
+}
+
+/* Undo the collapsing navbar */
+.navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+
+.navbar-toggle {
+  display: none;
+}
+.navbar-collapse {
+  border-top: 0;
+}
+
+.navbar-brand {
+  margin-left: -15px;
+}
+
+/* Always apply the floated nav */
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+.navbar-nav > li {
+  float: left;
+}
+.navbar-nav > li > a {
+  padding: 15px;
+}
+
+/* Redeclare since we override the float above */
+.navbar-nav.navbar-right {
+  float: right;
+}
+
+/* Undo custom dropdowns */
+.navbar .navbar-nav .open .dropdown-menu {
+  position: absolute;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #333;
+}
+.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #fff !important;
+  background-color: #428bca !important;
+}
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  color: #999 !important;
+  background-color: transparent !important;
+}
+
 .col-xs-15,
 .col-sm-15,
 .col-md-15,
@@ -39,20 +144,29 @@ p{
 .thanks{
   padding: 30px;
   position: relative;
-  max-width: 820px;
-  background-color: #1e1e1e;
-  border: 1px solid #4c4c4c;
-  border-radius: 0px;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 10px;
   color: #fff;
   .zag{
-    font-size: 24px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    color: #fff;
+    z-index: 9999;
+    position: relative;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: $black;
+    font-weight: 400;
   }
   .desc{
-    color: #fff;
-    font-size: 18px;
+    z-index: 9999;
+    position: relative;
+    color: #7d7d7d;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: Roboto !important;
+    font-weight: 300;
   }
 }
 
@@ -79,29 +193,31 @@ p{
 }
 
 
-.popup1{
+.popup1,.popupgo{
   padding: 30px;
   position: relative;
-  max-width: 820px;
-  background-color: #1e1e1e;
-  border: 1px solid #4c4c4c;
-  border-radius: 0px;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 10px;
   color: #fff;
   .zag{
-    font-size: 24px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    color: #fff;
+    z-index: 9999;
+    position: relative;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: $black;
+    font-weight: 400;
   }
   .desc{
-    color: #fff;
-    font-size: 18px;
-  }
-  .min{
-    font-size: 18px;
-    margin-top:20px;
-    color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 0px;
+    z-index: 9999;
+    position: relative;
+    color: #7d7d7d;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: Roboto !important;
   }
   .form{
     background-color: transparent;
@@ -110,57 +226,155 @@ p{
     margin-top:20px;
     width: 100%;
   }
-  form ::-webkit-input-placeholder {
-      color:    rgba(255, 255, 255, 0.5) !important;
-  }
-  form :-moz-placeholder {
-      color:    rgba(255, 255, 255, 0.5) !important;
-      opacity:  1;
-  }
-  form ::-moz-placeholder {
-      color:    rgba(255, 255, 255, 0.5) !important;
-      opacity:  1;
-  }
-  form :-ms-input-placeholder {
-      color:    rgba(255, 255, 255, 0.5)  !important;
-  }
   .frstclass{
     margin-left: 0px;
   }
   input{
+    background-color: #fff;
+    color: #b0b0b0;
+    width: 214px;
     float: left;
-    border-radius: 0px;
-    border: 1px solid #fff;
-    height: 50px;
-    width: 237px;
-    background-color: transparent;
-    padding-left: 20px;
-    color:#fff;
-    font-family: pfreg !important;
-    line-height: 50px;
-    font-size: 18px;
-    margin-right: 8px;
+    padding-left: 35px;
+    height: 65px;
+    border: none;
+    margin-right: 25px;
+    border-radius: 10px;
+    font-weight: 300;
+    font-family: Roboto !important;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
+    font-size: 1.8rem;
   }
   button{
+    @include linegrad($grad1,$grad2);
+    width: 287px;
     float: left;
-    display: block;
-    background: rgb(0,204,255);
-    height: 50px;
-    width: 237px;
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 21px;
-    padding-top: 4px;
+    height: 65px;
     border: none;
-    font-size: 20px;
+    font-size: 2.4rem;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
   }
-  button:active{
-    -webkit-box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.75);
-    box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.75);
+  .min{
+    padding-top: 16px;
+    text-align: center;
+    color: #7d7d7d;
+    display: block;
+    margin: auto;
+    clear: both;
+    font-size: 1.6rem;
+    font-family: Roboto !important;
+    font-weight: 300;
+  }
+}
+.popupgo{
+  .zag{
+    line-height: 40px;
+    font-size: 36px;
+  }
+}
+.command1,.command2,.command3,.command4,.command5,.command6,.command7,.command8{
+
+  z-index: 9999;
+  position: relative;
+  padding: 30px;
+  max-width: 620px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #fff;
+  .zag{
+    z-index: 9999;
+    position: relative;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #ecaf3b;
+    font-weight: 400;
+  }
+  .who{
+    font-size: 18px;
+    color: #3c3c3c;
+    font-weight: 400;
+  }
+  .desc{
+    z-index: 9999;
+    position: relative;
+    color: #3c3c3c;
+    font-size: 16px;
+    font-family: Roboto !important;
   }
 }
 
-// Map Filter
 
+.owl-carousel .owl-item img {
+  -webkit-transform-style:preserve-3d;
+  display:block;
+  width:auto !important;
+}
+
+.popup_more1,.popup_more2,.popup_more3,.popup_more4,.popup_more5,.popup_more6{
+  z-index: 9999;
+  position: relative;
+  padding: 60px;
+  background-color: #fff;
+  border-radius: 10px;
+  .zag{
+    z-index: 9999;
+    position: relative;
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: $black;
+  }
+  .desc{
+    z-index: 9999;
+    position: relative;
+    color: $black;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: Roboto !important;
+    margin-bottom: 40px;
+    max-width: 529px;
+  }
+  .about{
+    font-size: 20px;
+    color: #3c3c3c;
+    margin-bottom: 45px;
+  }
+  .mindesc{
+    font-size: 17px;
+    font-weight: 300;
+    font-family: Roboto !important;
+  }
+  .ics{
+    padding-right: 10px !important;
+    display: block;
+    // margin-bottom: 20px;
+  }
+  .padb{
+    margin-bottom: 15px;
+  }
+  button{
+    @include linegrad($grad1,$grad2);
+    width: 302px;
+    float: left;
+    height: 65px;
+    color: #fff;
+    border: none;
+    font-size: 2.4rem;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+  }
+  button:hover{
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
+    transition-duration:0.2s;
+    @include linegrad($grad2,$grad1);
+  }
+  .img_block{
+    width: 100%;
+    // height: 286px;
+    background-color: #d9d9d9;
+  }
+}

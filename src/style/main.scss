@@ -5,7 +5,9 @@
 @import "partials/animate.min.css"; 
 @import "partials/validationEngine.jquery.css"; 
 @import "partials/jquery.arcticmodal-0.3.css"; 
-@import "partials/app.scss"; 
+@import "partials/owl.carousel.css";
+@import "partials/owl.theme.css"; 
+
 
 /*
 * Custom
@@ -131,6 +133,7 @@ $grey: #6f6f6f;
 		font-weight: 300;
 	}
 }
+@import "partials/app.scss"; 
 
 .roboto{
 	font-family: Roboto !important
@@ -148,7 +151,20 @@ form button:hover{
 	@include linegrad($grad2,$grad1);
 }
 
+.color-overlay{
+	background: rgba(0, 0, 0, 0.3);
+	min-height: 1px;
+	top: 82px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	overflow: hidden;
+}
+
 header{
+	clear: both;
+	height: 82px;
 	background-color:#fff;
 	.logo{
 		margin-top: 17px;
@@ -160,7 +176,7 @@ header{
 		}
 		font-weight: 600;
 		text-align: right;
-		font-size: 2.8rem;
+		font-size: 2.6rem;
 	}
 	.callback{
 		float: right;
@@ -272,7 +288,7 @@ header{
 }
 
 .bg2{
-	padding-bottom: 80px;
+	padding-bottom: 0px;
 	.row{
 		margin-bottom: 50px;
 	}
@@ -294,8 +310,8 @@ header{
 		margin: auto;
 	}
 	h2{
-		margin-top: 131px;
-		margin-bottom: 68px;
+		margin-top: 71px;
+		margin-bottom: 28px;
 	}
 	.text{
 		h4{
@@ -316,12 +332,12 @@ header{
 }
 
 .bg3{
-	padding-bottom: 80px;
+	padding-bottom: 40px;
 	position: relative !important;
 	@include bg(url('../img/bg3.jpg'));
 	h2{
-		margin-top: 138px;
-		margin-bottom: 25px;
+		margin-top: 58px;
+		margin-bottom: 45px;
 		color: #fff;
 	}
 	.whitearr1{
@@ -342,7 +358,7 @@ header{
 		height: 55px;
 		width: 472px;
 		color: #fff;
-		font-size: 3.6rem;
+		font-size: 3.2rem;
 		line-height: 55px;
 		text-align: center;
 		margin:0px auto 80px;
@@ -405,7 +421,7 @@ header{
 	}
 	.abs{
 		position: absolute;
-		top: 620px;
+		top: 570px;
 		left: 0;
 		right: 0;
 		margin: auto;
@@ -430,16 +446,16 @@ header{
 					display: block;
 				}
 				.im1{
-					margin-left: 190px;
+					margin-left: 210px;
 				}
 				.im3{
-					margin-right: 190px;
+					margin-right: 210px;
 				}
 				.tm1{
-					margin-left: 95px;
+					margin-left: 125px;
 				}
 				.tm3{
-					margin-right: 95px;
+					margin-right: 125px;
 				}
 			}
 		}
@@ -447,13 +463,23 @@ header{
 }
 
 .bg4{
-	padding-bottom: 88px;
+	padding-bottom: 8px;
+	
 	@include bg(url('../img/bg4.jpg'));
 	background-repeat: repeat;
 	background-size: none;
+	
+	.logocompany{
+		width: 60px !important;
+		max-width: 114px;
+	}
 	h2{
-		margin-top: 121px;
+		margin-top: 61px;
 		margin-bottom: 77px;
+	}
+	.block:hover{
+		box-shadow: 0px 0px 15px 2px rgba(0,0,0,0);
+		transition-duration:.4s;
 	}
 	.block{
 		box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.2);
@@ -481,6 +507,7 @@ header{
 			border-top-right-radius: 10px;
 		}
 		.blockunder{
+			padding-right: 15px;
 			.count{
 				font-size: 6rem;
 				color: $black;
@@ -491,7 +518,11 @@ header{
 			.col-xs-3{
 				img{
 					display: block;
-					margin:0px auto 35px;
+					margin:5px auto 35px;
+				}
+				.bl1img{
+					margin-top: 20px;
+					margin-bottom: 28px;
 				}
 			}
 			.zag{
@@ -500,13 +531,22 @@ header{
 				margin-top: 34px;
 				margin-bottom: 25px;
 			}
+			.down1{
+				padding-top: 20px !important;
+			}
+			.down2{
+				padding-bottom: 22px !important;
+			}
+			.down7{
+				padding-top: 9px !important;
+			}
 			.greytext{
-				color: #727272;
-				font-size: 1.5rem;
-				font-style: italic;
+				color: #2980b9;
+				font-size: 1.7rem;
+				font-style: normal;
 				font-family: Roboto !important;
-				font-weight: 300;
-
+				font-weight: 400;
+				height: 72px;
 			}
 			.ic{
 				color: $black;
@@ -515,12 +555,6 @@ header{
 				font-weight: 300;
 				margin-top: 20px;
 				padding-right: 20px;
-			}
-			.down1{
-				padding-top: 20px !important;
-			}
-			.down2{
-				padding-top: 22px !important;
 			}
 		}
 		.more{
@@ -542,6 +576,11 @@ header{
 			margin: auto;
 			margin-right: 20px;
 		}
+		.acttestim{
+			border:1px solid transparent;
+			@include linegrad(180deg,$grad1,$grad2);
+			transition-duration:.4s;
+		}
 		.testim:hover{
 			border:1px solid $grey;
 			transition-duration:.4s;
@@ -553,11 +592,77 @@ header{
 			transition-duration:.4s;
 		}
 	}
-	.active_block{
-		border:3px solid $orange !important;
+	.owl-dot:first-child{
+	  margin-top: 0px;
+	}
+	.owl-dot{
+	  height: 15px;
+	  width: 15px;
+	  border-radius: 50%;
+	  background-color: transparent;
+	  cursor: pointer;
+	  border:1px solid #e5895a;
+	  margin-bottom: 5px;
+	  position: relative;
+	  right: 50px;
+	  display: inline-block;
+	  margin: 0px 4px;
+	}
+	.owl-dot.active{
+	  @include linegrad(180deg,$grad1,$grad2);
+	  border:1px solid transparent;
+	}
+	.owl-dots{
+		display: block;
+	  margin-top: -60px;
+	  margin-bottom: 50px;
+	  position: relative;
+	  margin-left: 0px;
+	}
+	// .active_block{
+	// 	border:3px solid $orange !important;
+	// }
+	.uptest{
+		position: absolute;
+		z-index: 2 !important;
+	}
+	.abstest1{
+		margin-left: 160px;
+		margin-top: -36px;
+	}
+	.abstest2{
+		margin-left: 560px;
+		margin-top: -36px;
+	}
+	.abstest3{
+		margin-left: 950px;
+		margin-top: -36px;
+	}
+	.faceimon5{
+		margin-bottom: 0px !important;
+	}
+	.faceimon6{
+		margin-bottom: 60px !important;
+	}
+	.txtimon6{
+		padding-right: 40px !important;
+	}
+	.faceimon12{
+		margin-bottom: 0px !important;
+	}
+	.faceimon11{
+		margin-bottom: 10px !important;
+	}
+	.faceimon13{
+		margin-bottom: 0px !important;
+	}
+	.faceimon14{
+		margin-bottom: 20px !important;
 	}
 
 	.testimonial{
+		box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.4);
+		cursor: move;
 		margin-bottom: 70px;
 		width: 1170px;
 		margin-right: auto;
@@ -566,14 +671,23 @@ header{
 		height: 100%;
 		border-radius: 10px;
 		position: relative;
-		border:3px solid $orange !important;
+		border:3px solid #e5895a !important;
 		background-color: #fff;
 		.faces{
 			margin-right: 15px;
+			margin-bottom: 40px;
+			margin-top: 12px;
 			float: left;
+			border-radius: 10px;
+			width: 91px !important;
+			height: auto;		
 		}
 		.row{
-			padding: 50px 40px;
+			padding-left: 30px;
+			padding-right: 40px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+
 		}
 		.name{
 			color: $orange;
@@ -626,7 +740,7 @@ header{
 			position: absolute;
 			// top: 100px;
 			// right: -20px;
-			right: 10px !important;
+			right: 20px !important;
 			transform:rotate(180deg);
 		}
 	}
@@ -641,11 +755,36 @@ header{
 	.down3{
 		margin-top: 60px !important;
 	}
+	.down8{
+		margin-top: 15px !important;
+	}
+	.down9{
+		margin-bottom: 44px !important;
+	}
 	.upd{
 		margin-top: 50px;
 	}
 	.upd2{
 		margin-top: 15px;
+	}
+	.upd3{
+		margin-top: 13px;
+	}
+	.upd5{
+		margin-top: 50px;
+	}
+	.upd4{
+		margin-top: 57px;
+	}
+
+	#carous2,#carous3,#carous5,#carous6{
+		display: none;
+	}
+	.frst4{
+		padding-top: 20px;
+	}
+	.frst5{
+		padding-top: 10px;
 	}
 }
 
@@ -665,6 +804,8 @@ header{
 		}
 		.conf{
 			color: #716d76;
+			font-size: 12px;
+			font-family: Roboto !important;
 		}
 		button{
 			color: #fff;
@@ -674,7 +815,7 @@ header{
 
 .bg6{
 	background-color: #fff;
-	padding: 150px 0px;
+	padding: 60px 0px;
 	h2{
 		padding-bottom: 80px;
 	}
@@ -683,17 +824,17 @@ header{
 		border-radius: 10px;
 		padding: 15px 25px;
 		height: 100%;	
-		cursor: pointer;
+		// cursor: pointer;
 		img{
 			margin-right: 15px;
 			float: none !important;
 			display: inline-block;
 		}
 	}
-	.block:hover{
-		transition-duration:.4s;
-		border:1px dotted $grey;
-	}
+	// .block:hover{
+	// 	transition-duration:.4s;
+	// 	border:1px dotted $grey;
+	// }
 	.desc{
 		font-size: 2.4rem;
 		display: inline-block;
@@ -709,7 +850,7 @@ header{
 	background-repeat: repeat;
 	background-size: none;
 	overflow: hidden;
-	padding: 110px 0px 0px 0px;
+	padding: 50px 0px 0px 0px;
 	.block{
 		width: 765px;
 		height: 202px !important;
@@ -734,10 +875,10 @@ header{
 		}
 		.im1{
 			z-index: 8;
-			filter: grayscale(0%);
-		  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
-		  filter: none;
-		  -webkit-filter: grayscale(0);
+			// filter: grayscale(0%);
+		 //  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
+		 //  filter: none;
+		 //  -webkit-filter: grayscale(0);
 		}
 		.im2{
 			z-index: 7;
@@ -839,11 +980,11 @@ header{
 
 .bg8{
 	position: relative;
-	z-index: 9999;
-	padding-bottom: 90px;
+	z-index: 9998;
+	padding-bottom: 70px;
 	h2{
 		color: #545454;
-		padding-top: 100px;
+		padding-top: 50px;
 		padding-bottom: 25px;
 	}
 	.under{
@@ -900,6 +1041,7 @@ header{
 			font-weight: 300;
 			font-size: 2rem;
 			margin-bottom: 30px;
+			border: 2px solid #ccc;
 		}
 		margin: auto !important;
 		.locked{
@@ -933,8 +1075,8 @@ header{
 		width: 100%;
 	}
 	.mapAdress{
-		height: 210px;
-		width: 426px;
+		height: 280px;
+		width: 486px;
 		background-image: url('../img/bubble.png');
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -948,40 +1090,44 @@ header{
 	    -webkit-filter: grayscale(0) !important;
 		p{
 			font-family: Roboto !important;
-			font-weight: 300;
+			font-weight: 400;
 			font-size: 1.5rem;
 			color: #fff;
+			a{
+				font-size: 1.5rem;
+				color: #fff;
+			}
 		}
 	}
 	.str1{
 		padding-left:20px;
-		padding-top: 20px; 
+		padding-top: 30px; 
 	}
 	.str2{
 		padding-left:20px;
 		padding-top: 0px; 
-		font-size: 1.8rem !important;
+		font-size: 1.4rem !important;
 	}
 	.str3{
 		padding-left:20px;
-		padding-top: 20px; 
+		padding-top: 4px; 
 	}
 	.str4 a{
 		padding-left:20px;
 		color: #fff;
-		font-size: 1.8rem;
 	}
 }
 
 .ymaps-b-balloon__content{
 	border: none !important;
-	height: 210px !important;
-		width: 426px !important;
+	height: 280px !important;
+		width: 486px !important;
 		background-color: transparent !important;
 			filter: grayscale(0%) !important;
 		  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)" !important;
 		  filter: none !important; 
 		  -webkit-filter: grayscale(0) !important;
+
 }
 .ymaps-b-balloon__tl{
 	display: none !important; 
@@ -990,8 +1136,8 @@ header{
 	padding: 0px !important;
 }
 .ymaps-b-balloon__content>ymaps{
-	height: 210px !important;
-		width: 426px !important;
+	height: 280px !important;
+		width: 486px !important;
 			filter: grayscale(0%) !important;
 		  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)" !important;
 		  filter: none !important; 
@@ -1004,8 +1150,8 @@ header{
 
 
 ymaps{
-  filter: grayscale(100%);
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  // filter: grayscale(100%);
+  // filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
   filter: gray;
   -webkit-filter: grayscale(1);
 }
